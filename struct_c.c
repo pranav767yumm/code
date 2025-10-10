@@ -25,10 +25,10 @@ strcpy(s1.name,n);
   printf("%f\n",s2.marks);
   printf("%d\n",s2.roll);
   printf("%c %c %c %c %c %c\n",s1.name[0],s1.name[1],s1.name[2],s1.name[3],s1.name[4],s1.name[5]);
-  for(int i = 0 ; i <= 5; i++ )
+  for(int i = 0 ; i <= a; i++ )
   {
       printf("%c \n",s1.name[i]);  
   }
-  printf("%d",a);
+  printf(" lenth of name is : %d",a);
   return 0;
 }
