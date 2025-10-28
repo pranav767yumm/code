@@ -13,6 +13,11 @@ int main()
 {
 struct student s1;
 struct student s2;
+struct student *ptr = &s1;
+    /* here i am aiming at s1 which is object of student type structure  with the magic stick of asterisk { * }  thus all the
+    data/ value is being copied or saved in the *ptr  */
+
+        
   
 char n[]={"pranav"};
 strcpy(s1.name,n);
@@ -21,10 +26,12 @@ strcpy(s1.name,n);
   s2.roll=99;
   s2.marks=89.00;
   int a = strlen(n);
-  printf("%f\n",s1.marks);
-  printf("%d\n",s1.roll);
-  printf("%f\n",s2.marks);
-  printf("%d\n",s2.roll);
+  printf("%f  marks \n",ptr->marks); ///ptr -> marks 
+  printf("%d roll no \n",ptr->roll);
+    /*  here i am checking values of marks and roll inside the pointer ptr with { ->} 
+    arrow*/
+  printf("%f marks \n",s2.marks);
+  printf("%d roll no\n ",s2.roll);
   printf("%c %c %c %c %c %c\n",s1.name[0],s1.name[1],s1.name[2],s1.name[3],s1.name[4],s1.name[5]);
   for(int i = 0 ; i <= a; i++ )
   {
