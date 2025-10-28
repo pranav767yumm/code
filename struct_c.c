@@ -1,7 +1,8 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
-
+int reply;
+char ask;
 struct student{
   int roll;
   float marks;
@@ -30,5 +31,28 @@ strcpy(s1.name,n);
       printf("%c \n",s1.name[i]);  
   }
   printf(" lenth of name is : %d",a);
+
+  printf("want to input data in structure ?\n"),scanf("%d",&reply);
+  if(reply==1){
+    printf("markrs for student 1 : "),scanf("%f",&s1.marks);
+    printf("roll no for student 1 : "),scanf("%d",&s1.roll);
+    printf("markrs for student 2 : "),scanf("%f",&s2.marks);
+    printf("roll no for student 2 : "),scanf("%d",&s2.roll);
+  printf("\nwant to see output ? "),scanf("%d",&ask);
+      if((strcmp(ask,'y')==0) || (strcmp(ask,'Y')==0))
+      {
+              printf("%f\n",s1.marks);
+              printf("%d\n",s1.roll);
+              printf("%f\n",s2.marks);
+              printf("%d\n",s2.roll);
+      }
+      else
+      {
+          printf("okay as you wish !");
+      }
+  
+  }else{
+  printf("program executed ! ");
+  }
   return 0;
 }
