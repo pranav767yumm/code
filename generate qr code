@@ -1,1 +1,8 @@
+import os
+import qrcode
+#importing libraries os and qrcode from sys to convert text into qr
 
+content = str(input("enter content to convert it into QR code [link, text, contact no, media] : "))
+img = qrcode.make(content)
+img.save("qr1.png","PNG")
+#image genrated by this code will be in png for with .png extention
