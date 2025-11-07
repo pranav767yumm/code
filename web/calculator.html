@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<h1><div id="o">Asian College</div></h1>
+<hr>
+<h2> <div id="p"> this will be changed !</div></h2>
+<hr>
+
+<button onclick="change();">click to change</button>
+<button onclick="toalert();">click to alert</button>
+<br>
+<button onclick="multiply();">multiply</button>
+<button onclick="add();">add</button>
+
+<br><br><br>
+answer will be seen here !<br>
+for addition<br>
+<textarea id="ans"> </textarea>
+
+<br><br><br>
+answer will be seen here !<br>
+for multiplication <br> 
+<textarea id="ans1"> </textarea>
+
+
+<script>
+
+	function toalert(){
+		var txt = prompt("enter text");
+		alert(txt);
+		document.getElementById('p').innerHTML= txt ;
+	}
+	function change()
+	{
+		document.getElementById('o').innerHTML="hello";	
+	}
+	function add(){
+		n1 = prompt("enter number !");
+		n2 = prompt("enter number again !")
+		num1 = Number(n1);
+		num2 = Number(n2);
+		//alert(num1 + num2);
+		document.getElementById('ans').innerHTML = num1 + num2; 
+	} 
+
+	function multiply(){
+		n1 = prompt("enter number !");
+		n2 = prompt("enter number again !")
+		num1 = Number(n1);
+		num2 = Number(n2);
+		//alert(num1 * num2);
+		document.getElementById('ans1').innerHTML = num1 * num2; 
+	} 
+</script>
+
+</body>
+</html>
