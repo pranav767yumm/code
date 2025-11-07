@@ -19,7 +19,10 @@
 <br><br><br>
 answer will be seen here !<br>
 for addition<br>
-<textarea id="ans"> </textarea>
+
+<textarea id="q1" cols="5"></textarea> + <textarea id="q2" cols="5"></textarea> = <textarea cols="5" id="ans"> </textarea>
+<br>
+<button onclick="add();">submit </button>
 
 <br><br><br>
 answer will be seen here !<br>
@@ -39,8 +42,11 @@ for multiplication <br>
 		document.getElementById('o').innerHTML="hello";	
 	}
 	function add(){
-		n1 = prompt("enter number !");
-		n2 = prompt("enter number again !")
+		//n1 = prompt("enter number !");
+		//n2 = prompt("enter number again !")
+        n1 = document.getElementById('q1').value;
+        n2 = document.getElementById('q2').value;
+
 		num1 = Number(n1);
 		num2 = Number(n2);
 		//alert(num1 + num2);
