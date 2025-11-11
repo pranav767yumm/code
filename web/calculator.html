@@ -20,10 +20,15 @@
 answer will be seen here !<br>
 for addition<br>
 
-<textarea id="q1" cols="5"></textarea> + <textarea id="q2" cols="5"></textarea> = <textarea cols="5" id="ans"> </textarea>
+<textarea id="a1" cols="5"></textarea> + <textarea id="a2" cols="5"></textarea> = <textarea cols="5" id="ans_a"> </textarea>
 <br>
 <button onclick="add();"> + </button>
+<!----multiply---->
+<textarea id="m1" cols="5"></textarea> + <textarea id="m2" cols="5"></textarea> = <textarea cols="5" id="ans_m"> </textarea>
+<br>
+<button onclick="multiply();"> + </button>
 
+<!-------->
 <br><br><br>
 answer will be seen here !<br>
 for multiplication <br> 
@@ -42,23 +47,22 @@ for multiplication <br>
 		document.getElementById('o').innerHTML="hello";	
 	}
 	function add(){
-		
-        n1 = document.getElementById('q1').value;
-        n2 = document.getElementById('q2').value;
-
+        a1 = document.getElementById('q1').value;
+        a2 = document.getElementById('q2').value;
 		num1 = Number(n1);
 		num2 = Number(n2);
-		
 		document.getElementById('ans').innerHTML = num1 + num2; 
 	} 
 
 	function multiply(){
 		n1 = prompt("enter number !");
-		n2 = prompt("enter number again !")
+		n2 = prompt("enter number again !");
+		n1 = document.getElementById('m1').value;
+		n2 = document.getElementById('m2').value;
 		num1 = Number(n1);
 		num2 = Number(n2);
-		//alert(num1 * num2);
-		document.getElementById('ans1').innerHTML = num1 * num2; 
+		num3 = num1 * num2;
+		document.getElementById('ans_m').innerHTML = num3; 
 	} 
 </script>
 
