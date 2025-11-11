@@ -13,23 +13,23 @@
 <button onclick="change();">click to change</button>
 <button onclick="toalert();">click to alert</button>
 <br>
-<button onclick="multiply();">multiply</button>
-<button onclick="add();">add</button>
+
 
 <br><br><br>
-answer will be seen here !<br>
-for addition<br>
+addition<br>
 
 <textarea id="a1" cols="5"></textarea> + <textarea id="a2" cols="5"></textarea> = <textarea cols="5" id="ans_a"> </textarea>
 <br>
 <button onclick="add();"> + </button>
-<!----multiply---->
+<!----multiply----><br><br>
+substraction<br>
 <textarea id="m1" cols="5"></textarea> + <textarea id="m2" cols="5"></textarea> = <textarea cols="5" id="ans_m"> </textarea>
 <br>
 <button onclick="multiply();"> + </button>
 
 <!-------->
 <br><br><br>
+<button onclick="cat()"> try! </button><br>
 answer will be seen here !<br>
 for multiplication <br> 
 <textarea id="ans1"> </textarea>
@@ -47,16 +47,14 @@ for multiplication <br>
 		document.getElementById('o').innerHTML="hello";	
 	}
 	function add(){
-        a1 = document.getElementById('q1').value;
-        a2 = document.getElementById('q2').value;
+    a1 = document.getElementById('q1').value;
+    a2 = document.getElementById('q2').value;
 		num1 = Number(n1);
 		num2 = Number(n2);
 		document.getElementById('ans').innerHTML = num1 + num2; 
 	} 
 
 	function multiply(){
-		n1 = prompt("enter number !");
-		n2 = prompt("enter number again !");
 		n1 = document.getElementById('m1').value;
 		n2 = document.getElementById('m2').value;
 		num1 = Number(n1);
@@ -64,6 +62,13 @@ for multiplication <br>
 		num3 = num1 * num2;
 		document.getElementById('ans_m').innerHTML = num3; 
 	} 
+	
+	function cat(){
+	  x = prompt("enter text : ");
+	  y = prompt("enter text again : ");
+	  catedstring =  x + y;
+	  document.getElementById('ans1').innerHTML = catedstring;
+	}
 </script>
 
 </body>
