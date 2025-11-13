@@ -4,17 +4,9 @@ b=input("name of student searching admission for: ")
 c=int(input("enter age of the child (in digits only): "))
 xy=input("enter your location: ")
 
-#for(i = 1 , j = 6 ; i <= 1 ; i=+1 ){
-#j = +1
-
-
-
 # diffrent approach 
 ''' if 6 yaers old is going to 1 st std then'''
 g = c - 5
-
-
-
 
 '''if(c==5):
     g="senior KG"
@@ -43,7 +35,7 @@ elif(c > 15 and c <= 17):
 else:
     g="no admission allowed bellow thw age of 5" '''
 
-print(f"============eligible for admission in {g} std ============")
+print(f"============eligible for admission in {g} grade============")
 
 print("there are admissions avalable in",xy,"and nearby your location !!")
 o=input("would you like to contact school for further process: ")
@@ -55,9 +47,6 @@ elif o=="no":
     print("you can visit offline from mon-sat")
 else:
     print("input error")
-
-
-
 
 print("thank you for contacting us",a)
 print("we wish",b,"a great career ahead ! ")
