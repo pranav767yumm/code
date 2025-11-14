@@ -6,7 +6,6 @@ xy=input("enter your location: ")
 
 # diffrent approach 
 ''' if 6 yaers old is going to 1 st std then'''
-
 if(c==5):
     g="senior KG"
 elif ( c > 4 ) and (14 > c ) :
@@ -42,9 +41,14 @@ elif(c > 15 and c <= 17):
     g="college"  commented out   
 else:
     g="no admission allowed bellow thw age of 5" '''
-
-print(f"============eligible for admission in {g} grade============")
-
+if g=="err":
+    print(f"============uneligible for admission in our college============")
+else:
+    if(( c > 4 ) and (14 > c )):
+    print(f"============eligible for admission in {g}============")
+else:
+    print(f"============eligible for admission in {g} grade========")
+    
 print("there are admissions avalable in",xy,"and nearby your location !!")
 o=input("would you like to contact school for further process: ")
 
