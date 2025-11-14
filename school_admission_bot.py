@@ -6,7 +6,15 @@ xy=input("enter your location: ")
 
 # diffrent approach 
 ''' if 6 yaers old is going to 1 st std then'''
-g = c - 5
+
+if(c==5):
+    g="senior KG"
+elif ( c > 4 ) and (14 > c ) :
+    g = c - 5
+elif (c >= 15) and (c <= 25) :
+    g = "collage"
+else:
+    g="err"
 
 '''if(c==5):
     g="senior KG"
