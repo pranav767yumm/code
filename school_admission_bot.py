@@ -15,32 +15,7 @@ elif (c >= 15) and (c <= 25) :
 else:
     g="err"
 
-'''if(c==5):
-    g="senior KG"
-elif(c==6):
-    g="1st std"    
-elif(c==7):
-    g="2nd std"
-elif(c==8):                #remember to remove or alter this long code
-    g="3rd std"
-elif(c==9):
-    g="4th std"
-elif c==10:
-    g="5th std"
-elif(c==11):
-    g="6th std"
-elif(c==12):
-    g="7th std"
-elif(c==13):
-    g="8th std"
-elif(c==14):
-    g="9th std"
-elif(c==15):
-    g="10th std"
-elif(c > 15 and c <= 17):
-    g="college"  commented out   
-else:
-    g="no admission allowed bellow thw age of 5" '''
+
 if g=="err":
     print(f"============uneligible for admission in our college============")
 else:
