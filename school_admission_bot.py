@@ -15,12 +15,11 @@ elif (c >= 15) and (c <= 25) :
 else:
     g="err"
 
-
 if g=="err":
     print(f"============uneligible for admission in our college============")
-else:
-    if(( c > 4 ) and (14 > c )):
-    print(f"============eligible for admission in {g}============")
+elif( c >= 5 ) and (15 >= c ):
+    if( c >= 5 ) and (15 >= c ):
+        print(f"============eligible for admission in {g}============")
 else:
     print(f"============eligible for admission in {g} grade========")
     
@@ -38,4 +37,3 @@ else:
 print("thank you for contacting us",a)
 print("we wish",b,"a great career ahead ! ")
 print("get to know about us on ig @govschool.com.in")
-
